@@ -2,7 +2,7 @@
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 # More info on Python, GitHub Actions, and Azure App Service: https://aka.ms/python-webapps-actions
 
-name: Build and deploy Python app to Azure Web App - article-cms-flaskapp
+name: Build and deploy Python app to Azure Web App - article-web-app1
 
 on:
   push:
@@ -57,6 +57,6 @@ jobs:
       - name: 'Deploy to Azure Web App'
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'article-cms-flaskapp'
+          app-name: 'article-web-app1'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_6b6b5737f16c4bda8bd501909fd12d0f }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_23ad1ad27ad543f5adadced4e5793eb0 }}

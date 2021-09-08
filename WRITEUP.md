@@ -7,20 +7,12 @@
 - *Choose the appropriate solution (VM or App Service) for deploying the app*
 - *Justify your choice*
 
-APP SERVICE
-Cost: Very reasonable. There are three different tiers - Dev/Test, Production, and Isolated. Choose according to your requiremnts.
-Scalablity: Supports both Vertical or Horizontal scaling.
-Availability: Supports multiple languages, such as .NET, .NET Core, Java, Ruby, Node.js, PHP, or Python and support of both Linux and Windows environments.
-Workflow: Continous deployment through GitHub workflows on the Azure portal makes updating the CMS app a snap.
-
-Virtual Machine
-Cost: Also reasonable cost. Lower up-front cost compared to purchasing and maintaining hardware.
-Scalability: Supports both Vertical or Horizontal scaling.
-Availability: Support of both Linux and Windows VMs.
-Workflow: VMs allow for the installation of custom images and are an excellent choice for migrating from an on-premises server to the cloud. Also works fine to deploy web application etc.
+Analyze costs, scalability, availability: I am considering Standard tier pay as you go pricing model for both VM and App sevice. However app service is almost 1.5 times costlier than VM which can further increase if support is included in monthly plan. 
+In case of scalability, both VM and App Service offers autoscaling, loadbalancer and scale-limit. But, 1000 nodes per scale set and 30 instances in VM and App Service respectively.
+In case of availability, both VM and App Service offers SLA and Multi-region failover. However, SLA for VM offers upto 99.99% but for App Service it's upto 99.95%. Also, VM have different parameters in SLA like Availability Zone, Data Disk etc.
 
 My Choice:
-I chose App Service because the CMS app is lightweight, does not require robust compute power, and is easy to deploy through Azure. The CMS App is straightforward and runs on a Python codebase, which is supported by App Service. Overall, a simple choice. 
+I chose App Service because the CMS app is lightweight, does not require robust compute power, and is easy to deploy through Azure. The CMS App is straightforward and runs on a Python codebase, which is supported by App Service. For such a simple app, developer keep up and running in minutes without any underlying software. 
 
 ### Assess app changes that would change your decision.
 

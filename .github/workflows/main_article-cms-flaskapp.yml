@@ -59,4 +59,4 @@ jobs:
         with:
           app-name: 'article-cms-flaskapp'
           slot-name: 'production'
-          publish-profile: ${{ secrets.AzureAppService_PublishProfile_7a0dbb2db5864fd68e74237e97ed5c7b }}
+          publish-profile: ${{ secrets.AzureAppService_PublishProfile_9c6da269266a4142bab684baa61fea5f }}
